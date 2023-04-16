@@ -1,5 +1,6 @@
 package com.example.hiit_java;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
@@ -72,6 +73,7 @@ private FragmentFirstBinding binding;
 
                     imageView1 = getView().findViewById(R.id.imgExercise);
                     TextView myText = getView().findViewById(R.id.textview_first);
+                    //((MainActivity)getActivity()).playSong(view);
                     exercise = 1;
 
                     workout = "REST \n";

@@ -1,5 +1,6 @@
 package com.example.hiit_java;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,11 +16,22 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    //MediaPlayer music = MediaPlayer.create(this, R.raw.repas);
+    //public void playSong(View v){
+    //    music.start();
+    //}
+
     private AppBarConfiguration appBarConfiguration;
 private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        MediaPlayer music = MediaPlayer.create(this, R.raw.repas);
+        //public void playSong(View v){
+        //    music.start();
+        //}
+
         super.onCreate(savedInstanceState);
 
      binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -36,6 +48,7 @@ private ActivityMainBinding binding;
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                music.start();
             }
         });
     }
