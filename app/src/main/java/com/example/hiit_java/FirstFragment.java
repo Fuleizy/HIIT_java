@@ -61,6 +61,7 @@ private FragmentFirstBinding binding;
             public String workout;
             public int total_exercises = exerciseList.size();
             public int total_time = (total_exercises + 1) * (exercise_time + rest_time);
+            // test dev
 
             @Override
             public void onClick(View view) {
