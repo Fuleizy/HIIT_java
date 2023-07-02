@@ -98,7 +98,7 @@ private FragmentFirstBinding binding;
                             }
                         }
                         public void onFinish() {
-                            myText.setText("FINISHED!!");
+                            myText.setText("terminée!!");
                             isRunning = false;
                         }
                     }.start();
